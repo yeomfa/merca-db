@@ -58,7 +58,6 @@ img{
     height: 65%;
     border-radius: 30px;
     background: white;
-    display: -ms-grid;
     display: grid;
     justify-content: center;
     align-items: center;
@@ -68,6 +67,11 @@ img{
 }
 .form_img{
     width: 100px;
+}
+
+.form-name-last{
+    display: flex;
+    gap: 0rem;
 }
 
 .container-img{
@@ -86,9 +90,8 @@ img{
 }
 .form_div{
     position: relative;
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 7% 93%;
+    grid-template-columns: 7% 93%;
     margin-bottom: 1rem;
     padding: .25rem 0;
     border-bottom: 1px solid var(--colorMordadoOscuro);
@@ -98,7 +101,7 @@ img{
     border-bottom: 1px solid var(--colorMordado);
 }
 .form_div-one{
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 }
 .form_icon{
     font-size: 1.5rem;
@@ -127,6 +130,8 @@ img{
 .form_div-input{
     position: relative;
 }
+
+
 .form_input{
     position: absolute;
     top: 0;
@@ -160,7 +165,7 @@ img{
     font-size: var(--normal-font-size);
     outline: none;
     border: none;
-    margin-bottom: 1rem;
+    margin-bottom: .5rem;
     background-color: var(--colorNaranja);
     border-radius: .5rem;
     cursor: pointer;
@@ -208,10 +213,10 @@ img{
     color: cyan;
 }
 
-/*=== MEDIA ===*/
+/*=== MEDIA QUERIS ===*/
 @media screen and (min-width: 968px){
     .form{
-        -ms-grid-columns: 1.5fr 1fr;
+        grid-template-columns: 1.5fr 1fr;
         padding: 0 2rem;
         width: 80%;
         height: 80%;
@@ -243,10 +248,15 @@ img{
     .form_forgot{
         margin-bottom: 2rem;
     }
+
+    .form_div-one{
+        margin-bottom: 2rem;
+    }
 }
 
-@media screen and (max-height: 750px){
+@media screen and (max-height: 590px){
     .form_img{
+        display: none;
         width: 350px;
         justify-self: center;
     }
