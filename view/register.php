@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/styleregister.css">
     <link rel="icon" href="img/general/BannerLogin.png">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
     <title>Merca: Acceder o registrarse</title>
 </head>
 
@@ -18,7 +18,6 @@
             <div class="container-img">
                 <img src="img/general/BannerLogin.png" alt="Canasta Merca con productos" class="form_img">
             </div>
-
             <form action="../controller/action/actSignup.php" method="post" class="form_content">
                 <h1 class="form_title">¡Únete a la familia!</h1>
 
@@ -29,7 +28,7 @@
                         </div>
 
                         <div class="form_div-input">
-                            <label for="name" class="form_label">Nombre de usuario</label>
+                            <label for="" class="form_label">Nombre de usuario</label>
                             <input name="name" type="text" id="name" class="form_input">
                         </div>
                     </div>
@@ -42,7 +41,7 @@
                     </div>
 
                     <div class="form_div-input">
-                        <label for="email" class="form_label">Correo</label>
+                        <label for="" class="form_label">Correo</label>
                         <input name="email" type="email" id="email" class="form_input">
                     </div>
                 </div>
@@ -52,12 +51,22 @@
                         <i class='bx bx-lock'></i>
                     </div>
                     <div class="form_div-input">
-                        <label for="password" class="form_label">Contraseña</label>
+                        <label for="" class="form_label">Contraseña</label>
                         <input name="password" type="password" id="password" class="form_input">
                     </div>
                 </div>
+                <div class="form_div">
+                    <div class="form_icon">
+                        <i class='bx bx-lock'></i>
+                    </div>
+                    <div class="form_div-input">
+                        <label for="" class="form_label">Confirmar contraseña</label>
+                        <input type="password" class="form_input">
+                    </div>
+                </div>
 
-                <input type="submit" id="register" class="form_button" value="Registrarse">
+                <input type="submit" class="form_button" value="Registrarse"></a>
+
                 <div class="form_social">
                     <span class="form_social-text">Registrese con:</span>
 

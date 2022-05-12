@@ -18,7 +18,6 @@
             <div class="container-img">
                 <img src="img/general/BannerLogin.png" alt="Canasta Merca con productos" class="form_img">
             </div>
-
             <form action="../controller/action/actLogin.php" class="form_content" method="post">
                 <h1 class="form_title">¡Hola de nuevo!</h1>
 

@@ -21,4 +21,15 @@ function registerUser(User $user){
 
 }
 
+function deleteUser($idUser){
+    echo $idUser;
+    $dao = new UserDAO();
+    $dao->deleteUser($idUser);
+}
+
+function modifyUser($user){
+    $dao = new UserDAO();
+    $dao->modifyUser($user);
+}
+
 ?>

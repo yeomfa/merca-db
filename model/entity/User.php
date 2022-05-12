@@ -3,15 +3,21 @@
 class User{
     private $id;
     private $name;
+    private $phone;
     private $email;
+    private $dir;
     private $password;
     private $admin;
+    private $photo;
 
-    public function __construct($id, $name, $email, $password, $admin){
+    public function __construct($id, $name, $phone, $email, $dir, $photo, $password, $admin){
 
         $this->id = $id;
         $this->name = $name;
+        $this->phone = $phone;
         $this->email = $email;
+        $this->dir = $dir;
+        $this->photo = $photo;
         $this->password = $password;
         $this->admin = $admin;
 
@@ -30,8 +36,24 @@ class User{
         return $this->email;
     }
 
-     public function getPassword(){
+    public function getDir(){
+        return $this->dir;
+    }
+
+    public function getPassword(){
         return $this->password;
+    }
+
+    public function getPhone(){
+        return $this->phone;
+    }
+
+    public function getIdStore(){
+        return $this->idStore;
+    }
+
+    public function getPhoto(){
+        return $this->photo;
     }
 
     public function admin(){
@@ -58,8 +80,32 @@ class User{
         return $this;
     }
 
+    public function setDir($email){
+        $this->dir = $dir;
+
+        return $this;
+    }
+
+    public function setPhone($phone){
+        $this->phone = $phone;
+
+        return $this;
+    }
+
+    public function setIdStore($idStore){
+        $this->idStore = $idStore;
+
+        return $this;
+    }
+
     public function setPassword($password){
         $this->password = $password;
+
+        return $this;
+    }
+
+    public function setPhoto($photo){
+        $this->photo = $photo;
 
         return $this;
     }

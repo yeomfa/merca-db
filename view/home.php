@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 session_start();
 
@@ -20,17 +20,19 @@ session_start();
     <nav class="bar-menu close">
         <header>
             <div class="bar-logo-text">
-                <span class="bar-logo">
-                    <img src="img/icons/iconUser.svg" alt="Logo Merca">
-                </span>
-                <div class="text bar-text">
-                    <span class="name">
-                        <?php if (isset($_SESSION['ID_USER'])) 
-							echo $_SESSION['NAME_USER']; 
-						?>
+                <a href="profile.php">
+                    <span class="bar-logo">
+                        <img src="img/icons/iconUser.svg" alt="Logo Merca">
                     </span>
-                    <span class="rol">vendedor/comprador</span>
-                </div>
+                    <div class="text bar-text">
+                        <span class="name">
+                            <?php if (isset($_SESSION['ID_USER'])) 
+							    echo $_SESSION['NAME_USER']; 
+						    ?>
+                        </span>
+                        <span class="rol">Vendedor/Comprador</span>
+                    </div>
+                </a>
             </div>
 
             <img class="bar-toggle" src="img/icons/iconHam.svg" alt="Icono cerrar menu bar">
@@ -104,8 +106,8 @@ session_start();
             <div class="contenido-header">
                 <div class="head-izq">
                     <div class="logo-opciones">
-                        <a href="home.html"><img src="img/logos/LogoMercaAroundFinal.png" alt="Logo merca" class="logoHead"></a>
-                        <a href="home.html"><img src="img/logos/LogoText.png" alt="Texto merca" class="textLogoHead"></a>
+                        <a href="home.php"><img src="img/logos/LogoMercaAroundFinal.png" alt="Logo merca" class="logoHead"></a>
+                        <a href="home.php"><img src="img/logos/LogoText.png" alt="Texto merca" class="textLogoHead"></a>
                     </div>
                     <div class="contenedor-barra">
                         <input type="search" class="barra-buscar" placeholder="Buscar productos">
