@@ -22,7 +22,9 @@ session_start();
             <div class="bar-logo-text">
                 <a href="profile.php">
                     <span class="bar-logo">
-                        <img src="img/icons/iconUser.svg" alt="Logo Merca">
+                        <img src="<?php if (isset($_SESSION['ID_USER']))
+						    echo 'img/ppUser/'.$_SESSION['PHOTO_USER']; 
+						?>" alt="Logo Merca">
                     </span>
                     <div class="text bar-text">
                         <span class="name">

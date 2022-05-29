@@ -22,7 +22,6 @@ function registerUser(User $user){
 }
 
 function deleteUser($idUser){
-    echo $idUser;
     $dao = new UserDAO();
     $dao->deleteUser($idUser);
 }
@@ -32,4 +31,10 @@ function modifyUser($user){
     $dao->modifyUser($user);
 }
 
+function updatePhoto($namePhoto, $id){
+
+    $dao = new UserDAO();
+    $user = $dao->updatePhoto($namePhoto, $id);
+    return $user;
+}
 ?>

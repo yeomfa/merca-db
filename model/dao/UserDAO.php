@@ -73,6 +73,18 @@ class UserDAO{
         return $result;
     }
 
+    public function updatePhoto($namePhoto, $id){
+
+        $dataBase = new DataBase();
+        $stmt1 = "UPDATE user SET photo = :photo WHERE id = :idUser";
+
+        $result = $dataBase->runUpdate($stmt1, array(
+            ':photo' => $namePhoto,
+            ':idUser' => $id
+        ));
+
+    }
+
 }
 
  ?>

@@ -1,12 +1,10 @@
-$(document).ready(function() {
+$(document).ready(function () {
 
-    $("#form-edit").submit(function(e) {
+    $("#form-edit").submit(function (e) {
 
         e.preventDefault();
 
         var data = $(this).serializeArray();
-        let lol = document.getElementById('test');
-        let text = "Hola";
 
         $.ajax({
             type: "post",
@@ -21,4 +19,23 @@ $(document).ready(function() {
 
     });
 
+    var upImage = document.querySelector('#send-image');
+
+    upImage.addEventListener('click', function () {
+
+        var data = new FormData();
+        var file = $('#img')[0].files[0];
+        data.append('img', file);
+
+        $.ajax({
+            type: "post",
+            url: "../controller/action/actUpdatePhoto.php",
+            data: data,
+            contentType: false,
+            processData: false,
+            success: function (result) {
+            }
+        });
+
+    })
 });

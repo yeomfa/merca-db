@@ -33,9 +33,9 @@ session_start();
         <div class="content-main">
             <div class="head-main">
                 <div class="cont-img">
-                    <img src=<?php if (isset($_SESSION['ID_USER'])) 
-						    echo $_SESSION['PHOTO_USER']; 
-						?> alt="Foto perfil" class="img-profile">
+                    <img src="<?php if (isset($_SESSION['ID_USER']))
+						    echo 'img/ppUser/'.$_SESSION['PHOTO_USER']; 
+						?>" alt="Foto perfil" class="img-profile">
                     <div class="up-image" tabindex="0">
                         <i class='bx bx-image-add'></i>
                     </div>
@@ -113,7 +113,6 @@ session_start();
                 <i id="btnClose" class='bx bx-x btn-close'></i>
             </div>
             <form id="form-edit" class="content-edits">
-                <span id="test">Mi princesa hermosaaaaaa </span>
                 <div class="title">Actualizar datos:</div>
                 <div class="cont-field">
                     <i class='bx bx-user icon-info'></i>
@@ -155,6 +154,32 @@ session_start();
         </div>
 
     <!--ALERTS-->
+    
+    <!-- UP IMAGE -->
+
+    <div class="container-alerts-select select close">
+        <div class="container-btnClose">
+            <i id="btnClose-select" class='bx bx-x btn-close-select'></i>
+        </div>
+        <div class="content-alerts">
+            <div class="header-alerts-select">
+                <i class='bx bxs-user-circle'></i>
+                <span> Subir foto de perfil </span>
+            </div>
+            <div class="main-alerts-select">
+                <form id="upImage" method="post" enctype="multipart/form-data"> 
+                    <div id="cont-img-select" class="cont-img-select close">
+                        <img id="pre-img" class="img-profile" src="img/ppUser/iconUser.svg" alt="">
+                    </div>
+                    <input class="select-file" type="file" name="img" id="img" accept="image/*" title="Subir imagen">  
+                    <button id="send-image" type="button" class="btn-act-photo" title="Actualizar">
+                        <span>Actualizar</span>
+                        <i class='bx bx-check btn-icon'></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
 
     <!-- SUCCES -->
 
@@ -172,7 +197,6 @@ session_start();
                 <i class='bx bx-check btn-icon'></i>
             </button>
         </div>
-        </form>
     </div>
 
     <!--ERROR-->
@@ -191,7 +215,6 @@ session_start();
                 <i class='bx bx-check btn-icon'></i>
             </button>
         </div>
-        </form>
     </div>
 
     <!-- WARNING -->
