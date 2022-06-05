@@ -8,5 +8,4 @@ $idUser = $_GET['idUser'];
 deleteUser($idUser);
 
 header("Location: ../../view/login.php");
-
 ?>

@@ -17,6 +17,7 @@ if($user != null){
     $_SESSION['DIR_USER'] = $user->getDir();
     $_SESSION['PHOTO_USER'] = $user->getPhoto();
     $_SESSION['PASS_USER'] = $user->getPassword();
+    $_SESSION['ADMIN'] = $user->admin();
 
     if($user->admin() == 1){
         header("Location: ../../view/admin.php");

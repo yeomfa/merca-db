@@ -33,20 +33,16 @@ session_start();
         <div class="content-main">
             <div class="head-main">
                 <div class="cont-img">
-                    <img src="<?php if (isset($_SESSION['ID_USER']))
-						    echo 'img/ppUser/'.$_SESSION['PHOTO_USER']; 
-						?>" alt="Foto perfil" class="img-profile">
+                    <img id="img-user" src="" alt="Foto perfil" class="img-profile">
                     <div class="up-image" tabindex="0">
                         <i class='bx bx-image-add'></i>
                     </div>
                 </div>
                 <div class="cont-name-user">
-                    <span class="name">
-                        <?php if (isset($_SESSION['ID_USER'])) 
-						    echo $_SESSION['NAME_USER']; 
-						?>
+                    <span id="name-user"class="name">
+
                     </span>
-                    <span class="rol">Vendedor/Comprador</span>
+                    <span id="rol-user" class="rol">Vendedor/Comprador</span>
                 </div>
             </div>
 
@@ -56,43 +52,37 @@ session_start();
                 <div class="cont-date">
                     <i class='bx bx-envelope icon-info'></i>
                     <label>Correo:</label>
-                    <span id="email">
-                        <?php if (isset($_SESSION['ID_USER'])) 
-						    echo $_SESSION['EMAIL_USER']; 
-						?>
+                    <span id="email-user">
+
                     </span>
                 </div>
 
                 <div class="cont-date">
                     <i class='bx bx-mobile-alt icon-info'></i>
                     <label>Teléfono:</label>
-                    <span id="phone">
-                        <?php if (isset($_SESSION['ID_USER'])) 
-						    echo $_SESSION['PHONE_USER']; 
-						?>
+                    <span id="phone-user">
+                        
                     </span>
                 </div>
 
                 <div class="cont-date">
                     <i class='bx bx-home icon-info'></i>
                     <label>Dirección:</label>
-                    <span id="dir">
-                        <?php if (isset($_SESSION['ID_USER'])) 
-						    echo $_SESSION['DIR_USER']; 
-						?>
+                    <span id="dir-user">
+                        
                     </span>
                 </div>
 
                 <div class="cont-date">
                     <i class='bx bx-lock-alt icon-info'></i>
                     <label>Contraseña:</label>
-                    <span id="password">**********</span>
+                    <span id="password-user"></span>
                 </div>
 
             </div>
 
             <div class="cont-buttons">
-                <button class="btn-modify">
+                <button id="btn-modify" class="btn-modify">
                     <div>
                         <span class="modify">Modificar</span>
                         <i class='bx bx-pencil btn-icon'></i>
@@ -108,50 +98,43 @@ session_start();
         </div>
 
         <!--EDITS-->
-        <div class="container-edits close">
-            <div class="container-btnClose">
-                <i id="btnClose" class='bx bx-x btn-close'></i>
+        <div id="modal-act" class="container-edits">
+                <div class="container-btnClose">
+                    <i id="btnClose" class='bx bx-x btn-close'></i>
+                </div>
+                <form id="form-edit" action="" method="post" class="content-edits">
+                    <div id="title-modal" class="title">Actualizar usuario:</div>
+                    <div class="cont-field">
+                        <i class='bx bx-user icon-info'></i>
+                        <label class="subtitle" for="">Nombre:</label>
+                        <input id="" name='newname' type="text" title="nombre" value="">
+                    </div>
+                    <div class="cont-field">
+                        <i class='bx bx-envelope icon-info'></i>
+                        <label class="subtitle" for="">Correo:</label>
+                        <input id="" name="newemail" type="text" title="correo" value="">
+                    </div>
+                    <div class="cont-field">
+                        <i class='bx bx-mobile-alt icon-info'></i>
+                        <label class="subtitle" for="newphone">Teléfono:</label>
+                        <input id="newphone" name="newphone" type="text" title="teléfono" value="">
+                    </div>
+                    <div class="cont-field">
+                        <i class='bx bx-home icon-info'></i>
+                        <label class="subtitle" for="newdirection">Dirección:</label>
+                        <input id="newdir" name="newdir" type="text" title="dirección" value="">
+                    </div>
+                    <div class="cont-field">
+                        <i class='bx bx-lock-alt icon-info'></i>
+                        <label class="subtitle" for="newpassword">Contraseña:</label>
+                        <input id="newpassword" name="newpass" type="text" title="contraseña" value="">
+                    </div>
+                    <input hidden type="number" name="idUser" for="idUser" value=''>
+                    <button type="submit" class="btn-act" title="Actualizar">
+                        <span id="btn-modal-edit">Aceptar</span>
+                    </button>
+                </form>
             </div>
-            <form id="form-edit" class="content-edits">
-                <div class="title">Actualizar datos:</div>
-                <div class="cont-field">
-                    <i class='bx bx-user icon-info'></i>
-                    <label class="subtitle" for="newname">Nombre:</label>
-                    <input id="newname" name="newname" type="text" title="nombre" value=<?php if
-                        (isset($_SESSION['ID_USER'])) echo $_SESSION['NAME_USER']; ?>>
-                </div>
-                <div class="cont-field">
-                    <i class='bx bx-envelope icon-info'></i>
-                    <label class="subtitle" for="new">Correo:</label>
-                    <input id="newemail" name="newemail" type="text" title="correo" value=<?php if
-                        (isset($_SESSION['ID_USER'])) echo $_SESSION['EMAIL_USER']; ?>>
-                </div>
-                <div class="cont-field">
-                    <i class='bx bx-mobile-alt icon-info'></i>
-                    <label class="subtitle" for="newphone">Teléfono:</label>
-                    <input id="newphone" name="newphone" type="text" title="teléfono" value=<?php if
-                        (isset($_SESSION['ID_USER'])) echo $_SESSION['PHONE_USER']; ?>>
-                </div>
-                <div class="cont-field">
-                    <i class='bx bx-home icon-info'></i>
-                    <label class="subtitle" for="newdirection">Dirección:</label>
-                    <input id="newdir" name="newdir" type="text" title="dirección" value=<?php if
-                        (isset($_SESSION['ID_USER'])) echo $_SESSION['DIR_USER']; ?>>
-                </div>
-                <div class="cont-field">
-                    <i class='bx bx-lock-alt icon-info'></i>
-                    <label class="subtitle" for="newpassword">Contraseña:</label>
-                    <input id="newpassword" name="newpass" type="text" title="contraseña" value=<?php if
-                        (isset($_SESSION['ID_USER'])) echo $_SESSION['PASS_USER']; ?>>
-                </div>
-                <input hidden type="number" name="idUser" for="idUser" value=<?php if (isset($_SESSION['ID_USER'])) echo
-                    $_SESSION['ID_USER']; ?>>
-                <button id="btnAct" type="submit" class="btn-act" title="Actualizar">
-                    <span>Actualizar</span>
-                    <i class='bx bx-check btn-icon'></i>
-                </button>
-            </form>
-        </div>
 
     <!--ALERTS-->
     
@@ -183,7 +166,7 @@ session_start();
 
     <!-- SUCCES -->
 
-    <div class="container-alerts succes close">
+    <div id="alert-success" class="container-alerts succes">
         <div class="content-alerts">
             <div class="header-alerts">
                 <i class='bx bxs-check-circle'></i>
@@ -192,7 +175,7 @@ session_start();
             <div class="main-alerts">
                 <span id="msg-alert">¡Los datos se han actualizado!</span>
             </div>
-            <button type="button" class="btn-act btn-acept" title="Actualizar">
+            <button id="btn-acept" type="button" class="btn-act btn-acept" title="Actualizar">
                 <span>Aceptar</span>
                 <i class='bx bx-check btn-icon'></i>
             </button>
@@ -234,7 +217,7 @@ session_start();
                     <i class='bx bx-x btn-icon'></i>
                 </button>
                 <form action="../controller/action/actDeleteUser.php" method="get">
-                    <input hidden type="number" name="idUser" for="idUser" value=<?php if (isset($_SESSION['ID_USER']))
+                    <input hidden type="number" id="id-user" name="idUser" for="idUser" value=<?php if (isset($_SESSION['ID_USER']))
                         echo $_SESSION['ID_USER']; ?>>
                     <button type="submit" class="btn-delete-2" title="Eliminar">
                         <span>Eliminar</span>
@@ -250,7 +233,6 @@ session_start();
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/appprofile.js"></script>
     <script src="js/appfunctions.js"></script>
-    <script src="js/appajax.js"></script>
 
 </body>
 

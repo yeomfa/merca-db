@@ -18,7 +18,24 @@
             <div class="container-img">
                 <img src="img/general/BannerLogin.png" alt="Canasta Merca con productos" class="form_img">
             </div>
-            <form action="../controller/action/actLogin.php" class="form_content" method="post">
+            <form action="../controller/action/actSendEmail.php" class="form_content" method="post" id="form-email">
+                <div class="form-send-email">
+                    <h1 class="form_title">Recuperar contraseña</h1>
+                    <p>¡Ingrese su correo para recuperar su contraseña!</p>
+                    <div class="form_div form_div-one ">
+                        <div class="form_icon">
+                            <i class='bx bx-user-circle'></i>
+                        </div>
+    
+                        <div class="form_div-input">
+                            <label for="email" class="form_label">Correo</label>
+                            <input name="email" type="text" class="form_input">
+                        </div>
+                    </div>
+                    <input type="submit" class="form_button" value="Recuperar contraseña">
+                </div>
+            </form>
+            <form action="../controller/action/actLogin.php" class="form_content" method="post" id="form-login">
                 <h1 class="form_title">¡Hola de nuevo!</h1>
 
                 <div class="form_div form_div-one ">
@@ -41,7 +58,7 @@
                         <input name="password" type="password" class="form_input">
                     </div>
                 </div>
-                <a href="#" class="form_forgot">¿Olvidó su contraseña?</a>
+                <a id="btn-send-email" class="form_forgot">¿Olvidó su contraseña?</a>
 
                 <input type="submit" class="form_button" value="Acceder">
                 <div class="form_social">
@@ -58,6 +75,7 @@
         </div>
     </div>
     <!--=== MAIN js === -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/applogin.js"> </script>
 
 </body>

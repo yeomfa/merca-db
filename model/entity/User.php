@@ -1,14 +1,14 @@
 <?php
 
 class User{
-    private $id;
-    private $name;
-    private $phone;
-    private $email;
-    private $dir;
-    private $password;
-    private $admin;
-    private $photo;
+    public $id;
+    public $name;
+    public $phone;
+    public $email;
+    public $dir;
+    public $password;
+    public $admin;
+    public $photo;
 
     public function __construct($id, $name, $phone, $email, $dir, $photo, $password, $admin){
 

@@ -37,4 +37,16 @@ function updatePhoto($namePhoto, $id){
     $user = $dao->updatePhoto($namePhoto, $id);
     return $user;
 }
+
+function seeUsers(){
+    $dao = new UserDAO();
+    $users = $dao->seeUsers();
+    return $users;
+}
+
+function seeUser($idUser){
+    $dao= new UserDAO();
+    $user = $dao->seeUser($idUser);
+    return $user;
+}
 ?>
