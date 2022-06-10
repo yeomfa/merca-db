@@ -13,6 +13,8 @@ $result = updatePhoto($newFile, $id);
 
 move_uploaded_file($_FILES['img']['tmp_name'], $folder.$newFile);
 
+$_SESSION['PHOTO_USER']=$newFile;
+
 echo true;
 
 ?>

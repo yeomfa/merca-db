@@ -354,33 +354,15 @@ body {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    border: 2px solid white;
     border-radius: 10px;
     padding: 1rem 1.7rem;
     height: 80px;
     width:170px;
     gap: .5rem;
+    background: white;
 }
 
-#users{
-    background: rgb(50, 187, 255);
-}
-
-#stores {
-    background: rgb(255, 50, 50);
-}
-
-#products {
-    background: rgb(83, 4, 147);
-}
-
-#dir {
-    background: rgb(255, 42, 216);
-}
-
-#orders {
-    background: rgb(255, 94, 0);
-}
+/* select */
 
 .container-select:hover {
     box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.534);
@@ -415,7 +397,7 @@ body {
 }
 
 .title-table-select p {
-    color: white;
+    color: var(--colorMoradoOscuro);
     font-weight: 600;
     font-size: 20px;
     transition: .2s;
@@ -430,7 +412,7 @@ body {
 }
 
 .container-select i {
-    color: white;
+    color: var(--colorMoradoOscuro);
 }
 
 /**** HISTORY ****/

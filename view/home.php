@@ -141,296 +141,22 @@ session_start();
         <div class="contenedor-cuerpo">
             <div class="cuerpo-subtitle">Destacados del día</div>
             <div class="contenedor-cuerpo-grid">
-                <div class="cuerpo-grid">
-                    <a href="#">
-                        <div class="cont-producto">
-                            <div class="contenedor-favorite">
-                                <i class='bx bx-heart icon-favorite'></i>
-                            </div>
-                            <div class="contenedor-photo">
-                                <img class="producto-img" src="img/general/BannerLogin.png" alt="No hay producto">
-                            </div>
-                            <div class="contenedor-info-producto">
-                                <div class="contenedor-price">
-                                    $10.000
-                                </div>
-                                <div class="contenedor-title">
-                                    Titulo producto
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="cont-producto">
-                            <div class="contenedor-favorite">
-                                <i class='bx bx-heart icon-favorite'></i>
-                            </div>
-                            <div class="contenedor-photo">
-                                <img class="producto-img" src="img/general/BannerLogin.png" alt="No hay producto">
-                            </div>
-                            <div class="contenedor-info-producto">
-                                <div class="contenedor-price">
-                                    $10.000
-                                </div>
-                                <div class="contenedor-title">
-                                    Titulo producto
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="cont-producto">
-                            <div class="contenedor-favorite">
-                                <i class='bx bx-heart icon-favorite'></i>
-                            </div>
-                            <div class="contenedor-photo">
-                                <img class="producto-img" src="img/general/BannerLogin.png" alt="No hay producto">
-                            </div>
-                            <div class="contenedor-info-producto">
-                                <div class="contenedor-price">
-                                    $10.000
-                                </div>
-                                <div class="contenedor-title">
-                                    Titulo producto
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="cont-producto">
-                            <div class="contenedor-favorite">
-                                <i class='bx bx-heart icon-favorite'></i>
-                            </div>
-                            <div class="contenedor-photo">
-                                <img class="producto-img" src="img/general/BannerLogin.png" alt="No hay producto">
-                            </div>
-                            <div class="contenedor-info-producto">
-                                <div class="contenedor-price">
-                                    $10.000
-                                </div>
-                                <div class="contenedor-title">
-                                    Titulo producto
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="cont-producto">
-                            <div class="contenedor-favorite">
-                                <i class='bx bx-heart icon-favorite'></i>
-                            </div>
-                            <div class="contenedor-photo">
-                                <img class="producto-img" src="img/general/BannerLogin.png" alt="No hay producto">
-                            </div>
-                            <div class="contenedor-info-producto">
-                                <div class="contenedor-price">
-                                    $10.000
-                                </div>
-                                <div class="contenedor-title">
-                                    Titulo producto
-                                </div>
-                            </div>
-                        </div>
-                    </a>
+                <div id="container1" class="cuerpo-grid">
+                    
                 </div>
-            </div>
-
-            <div class="contenedor-cuerpo-banner">
-                <a href="#">
-                    <div class="contenedor-banner">
-                        <img class="img-banner" src="img/general/BannerPromo.jpg" alt="Banner únete a la familia Merca">
-                    </div></a>
             </div>
 
             <div class="cuerpo-subtitle">Ofertas</div>
             <div class="contenedor-cuerpo-grid">
-                <div class="cuerpo-grid">
-                    <a href="#">
-                        <div class="cont-producto">
-                            <div class="contenedor-favorite">
-                                <i class='bx bx-heart icon-favorite'></i>
-                            </div>
-                            <div class="contenedor-photo">
-                                <img class="producto-img" src="img/general/BannerLogin.png" alt="No hay producto">
-                            </div>
-                            <div class="contenedor-info-producto">
-                                <div class="contenedor-price">
-                                    $10.000
-                                </div>
-                                <div class="contenedor-title">
-                                    Titulo producto
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="cont-producto">
-                            <div class="contenedor-favorite">
-                                <i class='bx bx-heart icon-favorite'></i>
-                            </div>
-                            <div class="contenedor-photo">
-                                <img class="producto-img" src="img/general/BannerLogin.png" alt="No hay producto">
-                            </div>
-                            <div class="contenedor-info-producto">
-                                <div class="contenedor-price">
-                                    $10.000
-                                </div>
-                                <div class="contenedor-title">
-                                    Titulo producto
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="cont-producto">
-                            <div class="contenedor-favorite">
-                                <i class='bx bx-heart icon-favorite'></i>
-                            </div>
-                            <div class="contenedor-photo">
-                                <img class="producto-img" src="img/general/BannerLogin.png" alt="No hay producto">
-                            </div>
-                            <div class="contenedor-info-producto">
-                                <div class="contenedor-price">
-                                    $10.000
-                                </div>
-                                <div class="contenedor-title">
-                                    Titulo producto
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="cont-producto">
-                            <div class="contenedor-favorite">
-                                <i class='bx bx-heart icon-favorite'></i>
-                            </div>
-                            <div class="contenedor-photo">
-                                <img class="producto-img" src="img/general/BannerLogin.png" alt="No hay producto">
-                            </div>
-                            <div class="contenedor-info-producto">
-                                <div class="contenedor-price">
-                                    $10.000
-                                </div>
-                                <div class="contenedor-title">
-                                    Titulo producto
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="cont-producto">
-                            <div class="contenedor-favorite">
-                                <i class='bx bx-heart icon-favorite'></i>
-                            </div>
-                            <div class="contenedor-photo">
-                                <img class="producto-img" src="img/general/BannerLogin.png" alt="No hay producto">
-                            </div>
-                            <div class="contenedor-info-producto">
-                                <div class="contenedor-price">
-                                    $10.000
-                                </div>
-                                <div class="contenedor-title">
-                                    Titulo producto
-                                </div>
-                            </div>
-                        </div>
-                    </a>
+                <div id="container2" class="cuerpo-grid">
+                    
                 </div>
             </div>
 
             <div class="cuerpo-subtitle">Recomendados para ti</div>
             <div class="contenedor-cuerpo-grid">
-                <div class="cuerpo-grid">
-                    <a href="#">
-                        <div class="cont-producto">
-                            <div class="contenedor-favorite">
-                                <i class='bx bx-heart icon-favorite'></i>
-                            </div>
-                            <div class="contenedor-photo">
-                                <img class="producto-img" src="img/general/BannerLogin.png" alt="No hay producto">
-                            </div>
-                            <div class="contenedor-info-producto">
-                                <div class="contenedor-price">
-                                    $10.000
-                                </div>
-                                <div class="contenedor-title">
-                                    Titulo producto
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="cont-producto">
-                            <div class="contenedor-favorite">
-                                <i class='bx bx-heart icon-favorite' ></i>
-                            </div>
-                            <div class="contenedor-photo">
-                                <img class="producto-img" src="img/general/BannerLogin.png" alt="No hay producto">
-                            </div>
-                            <div class="contenedor-info-producto">
-                                <div class="contenedor-price">
-                                    $10.000
-                                </div>
-                                <div class="contenedor-title">
-                                    Titulo producto
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="cont-producto">
-                            <div class="contenedor-favorite">
-                                <i class='bx bx-heart icon-favorite' ></i>
-                            </div>
-                            <div class="contenedor-photo">
-                                <img class="producto-img" src="img/general/BannerLogin.png" alt="No hay producto">
-                            </div>
-                            <div class="contenedor-info-producto">
-                                <div class="contenedor-price">
-                                    $10.000
-                                </div>
-                                <div class="contenedor-title">
-                                    Titulo producto
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="cont-producto">
-                            <div class="contenedor-favorite">
-                                <i class='bx bx-heart icon-favorite' ></i>
-                            </div>
-                            <div class="contenedor-photo">
-                                <img class="producto-img" src="img/general/BannerLogin.png" alt="No hay producto">
-                            </div>
-                            <div class="contenedor-info-producto">
-                                <div class="contenedor-price">
-                                    $10.000
-                                </div>
-                                <div class="contenedor-title">
-                                    Titulo producto
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="cont-producto">
-                            <div class="contenedor-favorite">
-                                <i class='bx bx-heart icon-favorite' ></i>
-                            </div>
-                            <div class="contenedor-photo">
-                                <img class="producto-img" src="img/general/BannerLogin.png" alt="No hay producto">
-                            </div>
-                            <div class="contenedor-info-producto">
-                                <div class="contenedor-price">
-                                    $10.000
-                                </div>
-                                <div class="contenedor-title">
-                                    Titulo producto
-                                </div>
-                            </div>
-                        </div>
-                    </a>
+                <div id="container3" class="cuerpo-grid">
+                    
                 </div>
             </div>
 
@@ -440,14 +166,14 @@ session_start();
                     <a href="#">
                         <div class="contenedor-seccion">
                             <div class="img-seccion">
-                                <img src="img/general/BannerLogin.png" alt="Imagen seccion" class="imagen-seccion">
+                                <img src="img/photosProducts/7.jpg" alt="Imagen seccion" class="imagen-seccion">
                             </div>
                             <div class="contenedor-info-seccion">
                                 <div class="titulo-seccion">
-                                    TITULO SECCIÓN
+                                    DESPENSA
                                 </div>
                                 <div class="descripcion-seccion">
-                                    Descripción de la seccion
+                                    Ver productos
                                 </div>
                             </div>
                         </div>
@@ -455,14 +181,14 @@ session_start();
                     <a href="#">
                         <div class="contenedor-seccion">
                             <div class="img-seccion">
-                                <img src="img/general/BannerLogin.png" alt="Imagen seccion" class="imagen-seccion">
+                                <img src="img/photosProducts/5.jpg" alt="Imagen seccion" class="imagen-seccion">
                             </div>
                             <div class="contenedor-info-seccion">
                                 <div class="titulo-seccion">
-                                    TITULO SECCIÓN
+                                    BEBIDAS
                                 </div>
                                 <div class="descripcion-seccion">
-                                    Descripción de la sección
+                                    Ver productos
                                 </div>
                             </div>
                         </div>
@@ -470,14 +196,14 @@ session_start();
                     <a href="#">
                         <div class="contenedor-seccion">
                             <div class="img-seccion">
-                                <img src="img/general/BannerLogin.png" alt="Imagen seccion" class="imagen-seccion">
+                                <img src="img/photosProducts/6.jpg" alt="Imagen seccion" class="imagen-seccion">
                             </div>
                             <div class="contenedor-info-seccion">
                                 <div class="titulo-seccion">
-                                    TITULO SECCIÓN
+                                    CUIDADO PERSONAL
                                 </div>
                                 <div class="descripcion-seccion">
-                                    Descripción de la seccion
+                                    Ver productos
                                 </div>
                             </div>
                         </div>
@@ -485,14 +211,14 @@ session_start();
                     <a href="#">
                         <div class="contenedor-seccion">
                             <div class="img-seccion">
-                                <img src="img/general/BannerLogin.png" alt="Imagen seccion" class="imagen-seccion">
+                                <img src="img/photosProducts/11.jpg" alt="Imagen seccion" class="imagen-seccion">
                             </div>
                             <div class="contenedor-info-seccion">
                                 <div class="titulo-seccion">
-                                    TITULO SECCIÓN
+                                    LIMPIEZA
                                 </div>
                                 <div class="descripcion-seccion">
-                                    Descripción de la seccion
+                                    Ver productos
                                 </div>
                             </div>
                         </div>
@@ -554,6 +280,7 @@ session_start();
     </footer>
 
     <!--JS-->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="js/appmain.js"></script>
 </body>
 </html>

@@ -81,20 +81,20 @@
                         <p>Usuarios</p>
                     </div>
                 </div>
-                <div id="stores" class="container-select">
-                    <div class="icon-table">
-                        <i class='bx bx-store'></i>
-                    </div>
-                    <div class="title-table-select">
-                        <p>Tiendas</p>
-                    </div>
-                </div>
                 <div id="products" class="container-select">
                     <div class="icon-table">
                         <i class='bx bx-shopping-bag'></i>
                     </div>
                     <div class="title-table-select">
                         <p>Productos</p>
+                    </div>
+                </div> 
+                <div id="stores" class="container-select">
+                    <div class="icon-table">
+                        <i class='bx bx-store'></i>
+                    </div>
+                    <div class="title-table-select">
+                        <p>Tiendas</p>
                     </div>
                 </div>
                 <div id="dir" class="container-select">
@@ -151,28 +151,35 @@
                         </tbody>
                     </table>
                 </div>
-                <div id="load-table-stores">
+                <div id="load-table-products">
                     <div class="title-add">
-                        <p class="title-table">Tiendas:</p>
-                        <button id="btn-add" title="Agregar tienda">Agregar tienda<i class='bx bx-store'></i></button>
+                        <p class="title-table">Productos:</p>
+                        <button id="btn-add-product" title="Agregar producto">Agregar producto<i class='bx bx-shopping-bag'></i></button>
                     </div>
-                    <table id="table-stores" class="table-stores">
+                    <table id="table-products" class="table-products">
                         <thead>
                             <tr>
+                                <th>Id</th>
                                 <th>Nombre</th>
+                                <th>Precio</th>
                                 <th>Descripción</th>
+                                <th>Categoría</th>
+                                <th>Foto</th>
                                 <th></th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr>
-                                <td>La grande</td>
-                                <td>Una tienda con productos geniales</td>
+                        <tbody id="tbody-products">
+                            <!-- <tr>
+                                <td>1</td>
+                                <td>Jugo hit</td>
+                                <td>2500</td>
+                                <td>Un jugo de furta cont. 500ml</td>
+                                <td>Alimento</td>
                                 <td class="btns">
                                     <button title="Editar" class="btnEdit"><i class='bx bx-pencil'></i></button>
                                     <button title="Eliminar" class="btnDelete"><i class='bx bx-trash'></i></button>
                                 </td>
-                            </tr>
+                            </tr> -->
                     </table>
                 </div>
             </div>
@@ -267,6 +274,81 @@
                 </form>
             </div>
         </div>
+
+        <!-- MODAL ADD PRODUCT -->
+        
+        <div id="modal-add-product" class="modal-edit-user">
+            <div class="container-edits-user">
+                <div class="container-btnClose">
+                    <i id="btn-close-add-product" class='bx bx-x btn-close-user'></i>
+                </div>
+                <form id="form-add-product" action="" method="post" class="content-edits-user">
+                    <div id="" class="title">Agregar producto:</div>
+                    <div class="cont-field">
+                        <i class='bx bx-shopping-bag icon-info'></i>
+                        <label class="subtitle" for="">Nombre:</label>
+                        <input id="" name='name' type="text" title="nombre" value="">
+                    </div>
+                    <div class="cont-field">
+                        <i class='bx bx-purchase-tag-alt icon-info'></i>
+                        <label class="subtitle" for="">Price:</label>
+                        <input id="" name="price" type="text" title="correo" value="">
+                    </div>
+                    <div class="cont-field">
+                        <i class='bx bx-text icon-info'></i>
+                        <label class="subtitle" for="newdescription">Descripción:</label>
+                        <input id="" name="description" type="text" title="teléfono" value="">
+                    </div>
+                    <div class="cont-field">
+                        <i class='bx bx-category-alt icon-info' ></i>
+                        <label class="subtitle" for="newdirection">Categoría:</label>
+                        <input id="" name="category" type="text" title="dirección" value="">
+                    </div>
+                    <button type="submit" class="btn-act" title="Actualizar">
+                        <span id="btn-modal-add-product">Aceptar</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- MODAL EDIT PRODUCT -->
+
+        <div id="modal-edit-product" class="modal-edit-user">
+            <div class="container-edits-user">
+                <div class="container-btnClose">
+                    <i id="btn-close-act-product" class='bx bx-x btn-close-user'></i>
+                </div>
+                <form id="form-act-product" action="" method="post" class="content-edits-user">
+                    <div id="" class="title">Editar producto:</div>
+                    <div class="cont-field">
+                        <i class='bx bx-shopping-bag icon-info'></i>
+                        <label class="subtitle" for="">Nombre:</label>
+                        <input id="" name='newname' type="text" title="nombre" value="">
+                    </div>
+                    <div class="cont-field">
+                        <i class='bx bx-purchase-tag-alt icon-info'></i>
+                        <label class="subtitle" for="">Price:</label>
+                        <input id="" name="newprice" type="text" title="correo" value="">
+                    </div>
+                    <div class="cont-field">
+                        <i class='bx bx-text icon-info'></i>
+                        <label class="subtitle" for="newdescription">Descripción:</label>
+                        <input id="" name="newdescription" type="text" title="teléfono" value="">
+                    </div>
+                    <div class="cont-field">
+                        <i class='bx bx-category-alt icon-info' ></i>
+                        <label class="subtitle" for="newdirection">Categoría:</label>
+                        <input id="newdir" name="newcategory" type="text" title="dirección" value="">
+                    </div>
+                    <input hidden type="number" name="idProduct" for="idProduct" value=<?php if (isset($_SESSION['ID_USER'])) echo
+                    $_SESSION['ID_USER']; ?>>
+                    <button type="submit" class="btn-act" title="Actualizar">
+                        <span id="btn-modal-act-product">Aceptar</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+
         <!-- SUCCES -->
         <div id="alert-succes" class="content-alerts">
             <div class="header-alerts">

@@ -126,6 +126,8 @@ div {
 }
 
 .img-profile {
+    
+    object-fit: cover;
     width: 87%;
     height: 87%;
     border-radius: 50%;
